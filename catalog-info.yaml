@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "{{ values.repoName }}"
+  description: "{{ values.description }}"
+  annotations:
+    github.com/project-slug: "{{ values.repoOwner }}/{{ values.repoName }}"
+  tags:
+    - nextjs
+    - portfolio
+    - docker
+    - cloud
+    - devops
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:default/guests
